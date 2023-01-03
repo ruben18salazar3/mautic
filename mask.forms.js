@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     });
 
     var SPMaskBehavior = function(val) {
-            return val.replace(/\D/g, 'B').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+            return val.replace(/\D/g, 'B').length === 5 ? '(00) 00000-0000' : '(00) 0000-00009';
         },
         spOptions = {
             onKeyPress: function(val, e, field, options) {
